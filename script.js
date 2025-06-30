@@ -63,11 +63,15 @@ window.addEventListener('scroll', () => {
   const posicionSeccion = seccionIntercambio.getBoundingClientRect().top + window.scrollY;
   const scrollActual = window.scrollY;
 
+if (window.innerWidth > 768) {
   if (scrollActual >= posicionSeccion - 100) {
     navbar.classList.add('swapped');
   } else {
     navbar.classList.remove('swapped');
   }
+} else {
+  navbar.classList.remove('swapped'); // Asegura quitarla en móviles
+}
 });
 
 // — obtén referencias a track, botones y al primer panel —
@@ -165,5 +169,11 @@ const hamburguesa = document.querySelector('.hamburguesa');
 const navLinks = document.querySelector('.nav-links');
 
 hamburguesa.addEventListener('click', () => {
-  navLinks.classList.toggle('abierto');
+  navLinks.classList.toggle('active');
+});
+
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('active');
+  });
 });
