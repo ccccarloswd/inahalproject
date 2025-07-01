@@ -1,9 +1,4 @@
-# Ignorar dependencias de Node
 inhala-backend/node_modules
-
-# Variables sensibles
 inhala-backend/.env
-
-# Archivos del sistema
 .DS_Store
 Thumbs.db

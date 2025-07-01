@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -388,4 +389,395 @@
 
     <script src="reservas.js"></script>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&family=Zen+Dots&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservar Clase | Inhala Centro de Bienestar</title>
+    <link rel="stylesheet" href="reservas.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <ul class="nav-links">
+            <li><a href="index.html#inicio">Inicio</a></li>
+            <li><a href="index.html#sobre-nosotros">Sobre Nosotros</a></li>
+            <li><a href="index.html#horarios">Horario</a></li>
+            <li><a href="index.html#clases">Clases</a></li>
+            <li><a href="index.html#equipo">Equipo</a></li>
+            <li><a href="index.html#ubicacion">Ubicación</a></li>
+            <li><a href="index.html#contacto">Contacto</a></li>
+            </ul>
+            <div class="logo">
+                <img src="img/portada.svg" alt="Ilustración de portada" class="logo-img"/>
+                <a href="#inicio">Inhala</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenedor principal -->
+    <div class="reserva-paneles">
+        <!-- Carrusel vertical de clases -->
+        <div class="clases-carrusel-vertical" id="clases-carrusel">
+            <h2>Selecciona tu clase</h2>
+            <div class="carrusel-contenedor">
+                <button class="carrusel-btn arriba">↑</button>
+                <div class="clases-scroll-wrapper">
+                <div class="clases-lista">
+                    <!-- Hatha Yoga -->
+                    <div class="clase-vertical seleccionada" data-clase="hatha" data-profesor="Laura Torres" data-precio="18" data-capacidad="15" data-dificultad="Principiante">
+                        <div class="clase-imagen">
+                            <img src="img/hatha.png" alt="Hatha Yoga">
+                        </div>
+                        <div class="clase-contenido">
+                            <h3>Hatha Yoga</h3>
+                            <div class="clase-descripcion">
+                                <p>Práctica pausada enfocada en la alineación y respiración consciente. Ideal para principiantes.</p>
+                            </div>
+                            <div class="clase-meta">
+                                <span class="clase-profesor">Laura Torres</span>
+                                <span class="clase-duracion">90 min</span>
+                                <span class="clase-precio">18€</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Vinyasa Flow -->
+                    <div class="clase-vertical" data-clase="vinyasa" data-profesor="Marcos Ruiz" data-precio="20" data-capacidad="12" data-dificultad="Intermedio">
+                        <div class="clase-imagen">
+                            <img src="img/vinyasa.png" alt="Vinyasa Flow">
+                        </div>
+                        <div class="clase-contenido">
+                            <h3>Vinyasa Flow</h3>
+                            <div class="clase-descripcion">
+                                <p>Secuencias dinámicas que fluyen con la respiración. Mejora tu fuerza y flexibilidad.</p>
+                            </div>
+                            <div class="clase-meta">
+                                <span class="clase-profesor">Marcos Ruiz</span>
+                                <span class="clase-duracion">90 min</span>
+                                <span class="clase-precio">20€</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Yin Yoga -->
+                    <div class="clase-vertical" data-clase="yin" data-profesor="Andrea López" data-precio="18" data-capacidad="10" data-dificultad="Todos los niveles">
+                        <div class="clase-imagen">
+                            <img src="img/yin.png" alt="Yin Yoga">
+                        </div>
+                        <div class="clase-contenido">
+                            <h3>Yin Yoga</h3>
+                            <div class="clase-descripcion">
+                                <p>Posturas pasivas que trabajan los tejidos profundos. Libera tensiones y mejora la movilidad.</p>
+                            </div>
+                            <div class="clase-meta">
+                                <span class="clase-profesor">Andrea López</span>
+                                <span class="clase-duracion">75 min</span>
+                                <span class="clase-precio">18€</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Pilates -->
+                    <div class="clase-vertical" data-clase="pilates" data-profesor="David Campos" data-precio="22" data-capacidad="8" data-dificultad="Intermedio">
+                        <div class="clase-imagen">
+                            <img src="img/pilates.png" alt="Pilates">
+                        </div>
+                        <div class="clase-contenido">
+                            <h3>Pilates</h3>
+                            <div class="clase-descripcion">
+                                <p>Fortalecimiento del core y mejora postural. Equipamiento profesional disponible.</p>
+                            </div>
+                            <div class="clase-meta">
+                                <span class="clase-profesor">David Campos</span>
+                                <span class="clase-duracion">60 min</span>
+                                <span class="clase-precio">22€</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Yoga Suave -->
+                    <div class="clase-vertical" data-clase="suave" data-profesor="Ana Puig" data-precio="16" data-capacidad="12" data-dificultad="Principiante">
+                        <div class="clase-imagen">
+                            <img src="img/suave.png" alt="Yoga Suave">
+                        </div>
+                        <div class="clase-contenido">
+                            <h3>Yoga Suave</h3>
+                            <div class="clase-descripcion">
+                                <p>Adaptado para personas con movilidad reducida o que buscan un ritmo más tranquilo.</p>
+                            </div>
+                            <div class="clase-meta">
+                                <span class="clase-profesor">Ana Puig</span>
+                                <span class="clase-duracion">60 min</span>
+                                <span class="clase-precio">16€</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Yoga Embarazadas -->
+                    <div class="clase-vertical" data-clase="embarazo" data-profesor="Lorena Sánchez" data-precio="20" data-capacidad="6" data-dificultad="Especial">
+                        <div class="clase-imagen">
+                            <img src="img/embarazo.png" alt="Yoga Embarazadas">
+                        </div>
+                        <div class="clase-contenido">
+                            <h3>Yoga Prenatal</h3>
+                            <div class="clase-descripcion">
+                                <p>Preparación física y emocional para el parto. A partir del segundo trimestre.</p>
+                            </div>
+                            <div class="clase-meta">
+                                <span class="clase-profesor">Lorena Sánchez</span>
+                                <span class="clase-duracion">75 min</span>
+                                <span class="clase-precio">20€</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Meditación -->
+                    <div class="clase-vertical" data-clase="meditacion" data-profesor="Marta Vidal" data-precio="15" data-capacidad="20" data-dificultad="Todos los niveles">
+                        <div class="clase-imagen">
+                            <img src="img/meditacion.png" alt="Meditación">
+                        </div>
+                        <div class="clase-contenido">
+                            <h3>Meditación Guiada</h3>
+                            <div class="clase-descripcion">
+                                <p>Técnicas de mindfulness y relajación profunda. No se requiere experiencia previa.</p>
+                            </div>
+                            <div class="clase-meta">
+                                <span class="clase-profesor">Marta Vidal</span>
+                                <span class="clase-duracion">45 min</span>
+                                <span class="clase-precio">15€</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Pranayama -->
+                     <div class="clase-vertical" data-clase="pranayama" data-profesor="Javier Ríos" data-precio="12" data-capacidad="16" data-dificultad="Baja">
+                        <div class="clase-imagen">
+                            <img src="img/pranayama.png" alt="Pranayama">
+                        </div>
+                        <div class="clase-contenido">
+                            <h3>Pranayama</h3>
+                            <div class="clase-descripcion">
+                                <p>Aprende a dominar la respiración consciente a través de antiguas técnicas yoguis. Ideal para reducir el estrés, mejorar el sueño y conectar con tu energía vital</p>
+                            </div>
+                            <div class="clase-meta">
+                                <span class="clase-profesor">Javier Ríos</span>
+                                <span class="clase-duracion">90 min</span>
+                                <span class="clase-precio">12€</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Yoga Restaurativo -->
+                    <div class="clase-vertical" data-clase="restaurativo" data-profesor="Paula Martínez" data-precio="18" data-capacidad="10" data-dificultad="Todos los niveles">
+                        <div class="clase-imagen">
+                            <img src="img/restaurativo.png" alt="Yoga Restaurativo">
+                        </div>
+                        <div class="clase-contenido">
+                            <h3>Yoga Restaurativo</h3>
+                            <div class="clase-descripcion">
+                                <p>Uso de soportes para alcanzar un estado de relajación profunda. Ideal para estrés y recuperación.</p>
+                            </div>
+                            <div class="clase-meta">
+                                <span class="clase-profesor">Paula Martínez</span>
+                                <span class="clase-duracion">90 min</span>
+                                <span class="clase-precio">18€</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Yoga Niños -->
+                     <div class="clase-vertical" data-clase="ninos" data-profesor="Clara Navarro" data-precio="10" data-capacidad="10" data-dificultad="Especial">
+                        <div class="clase-imagen">
+                            <img src="img/ninos.png" alt="Yoga niños">
+                        </div>
+                        <div class="clase-contenido">
+                            <h3>Yoga niños</h3>
+                            <div class="clase-descripcion">
+                                <p>Clase lúdica y creativa pensada para peques de 5 a 12 años. A través de juegos, cuentos y posturas suaves, desarrollan atención, equilibrio y autoestima.</p>
+                            </div>
+                            <div class="clase-meta">
+                                <span class="clase-profesor">Claro Navarro</span>
+                                <span class="clase-duracion">60 min</span>
+                                <span class="clase-precio">10€</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Vinyasa Avanzado -->
+                     <div class="clase-vertical" data-clase="avanzado" data-profesor="Marcos Ruiz" data-precio="15" data-capacidad="20" data-dificultad="Alta">
+                        <div class="clase-imagen">
+                            <img src="img/avanzado.png" alt="Vinyasa Avanzado">
+                        </div>
+                        <div class="clase-contenido">
+                            <h3>Vinyasa Avanzado</h3>
+                            <div class="clase-descripcion">
+                                <p>Flujo dinámico de posturas enlazadas por la respiración. Requiere experiencia previa. Trabajaremos fuerza, control y enfoque mental a través de secuencias desafiantes.</p>
+                            </div>
+                            <div class="clase-meta">
+                                <span class="clase-profesor">Marcos Ruiz</span>
+                                <span class="clase-duracion">90 min</span>
+                                <span class="clase-precio">15€</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Círculo de Voz-->
+                     <div class="clase-vertical" data-clase="circulo" data-profesor="Alicia Morales" data-precio="13" data-capacidad="12" data-dificultad="Apta para todos">
+                        <div class="clase-imagen">
+                            <img src="img/circulo.png" alt="Círculo de voz">
+                        </div>
+                        <div class="clase-contenido">
+                            <h3>Círculo de voz</h3>
+                            <div class="clase-descripcion">
+                                <p>Taller de expresión sonora para desbloquear la voz a nivel físico y emocional. Incluye canto de mantras, vibración consciente y exploración de tu autenticidad vocal.</p>
+                            </div>
+                            <div class="clase-meta">
+                                <span class="clase-profesor">Alicia Morales</span>
+                                <span class="clase-duracion">60 min</span>
+                                <span class="clase-precio">13€</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Taller Mensual -->
+                    <div class="clase-vertical" data-clase="taller" data-profesor="Equipo Inhala" data-precio="20" data-capacidad="15" data-dificultad="Variable">
+                        <div class="clase-imagen">
+                            <img src="img/taller.png" alt="Taller Mensual">
+                        </div>
+                        <div class="clase-contenido">
+                            <h3>Taller Mensual</h3>
+                            <div class="clase-descripcion">
+                                <p>Una experiencia especial cada mes: puede ser meditación con cuencos, yoga restaurativo, biodanza o encuentros estacionales. Ideal para profundizar más allá de la práctica regular.</p>
+                            </div>
+                            <div class="clase-meta">
+                                <span class="clase-profesor">Equipo Inhala</span>
+                                <span class="clase-duracion">60 min</span>
+                                <span class="clase-precio">20€</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Satsang -->
+                     <div class="clase-vertical" data-clase="satsang" data-profesor="Equipo Inhala" data-precio="0" data-capacidad="20" data-dificultad="Apto para todos">
+                        <div class="clase-imagen">
+                            <img src="img/Satsang.png" alt="Satsang">
+                        </div>
+                        <div class="clase-contenido">
+                            <h3>Satsang</h3>
+                            <div class="clase-descripcion">
+                                <p>Encuentro de sabiduría en comunidad. Lectura de textos, reflexión conjunta, preguntas abiertas y presencia compartida. Espacio íntimo y transformador.</p>
+                            </div>
+                            <div class="clase-meta">
+                                <span class="clase-profesor">Equipo Inhala</span>
+                                <span class="clase-duracion">60 min</span>
+                                <span class="clase-precio">0€</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                </div>
+                <button class="carrusel-btn abajo">↓</button>
+            </div>
+        </div>
+
+        <!-- Panel de reserva -->
+        <div class="panel-reserva">
+            <div class="reserva-header">
+                <h1>Reserva tu clase</h1>
+                <p id="clase-seleccionada-texto">Hatha Yoga con Laura Torres</p>
+            </div>
+
+            <form class="reserva-form" id="form-reserva">
+                <!-- Clase seleccionada -->
+                <div class="clase-seleccionada">
+                    <div class="clase-info">
+                        <h3 id="nombre-clase">Hatha Yoga</h3>
+                        <p id="profesor-clase">Laura Torres</p>
+                        <div class="clase-detalles">
+                            <span id="dificultad-clase">Nivel: Principiante</span>
+                            <span id="capacidad-clase">Capacidad: 15 plazas</span>
+                        </div>
+                        <div class="clase-precio">
+                            <span>Precio:</span>
+                            <strong id="precio-clase">18€</strong>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Selector de fecha -->
+                
+                <!-- Selector de horario -->
+                <div class="form-group">
+                    <label>Horario disponible*</label>
+                    <div class="horarios-disponibles" id="horarios-disponibles"></div>
+                </div>
+                
+                <!-- Datos personales -->
+                <div class="form-group">
+                    <label for="nombre">Nombre completo*</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="telefono">Teléfono*</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+                
+                <div class="form-group checkbox">
+                    <input type="checkbox" id="terminos" name="terminos" required>
+                    <label for="terminos">Acepto los <a href="#">términos y condiciones</a> y la <a href="#">política de privacidad</a>*</label>
+                </div>
+                
+                <button type="submit" class="boton-reserva">Confirmar Reserva</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-logo">
+                <h3>Inhala Espai</h3>
+                <p>Un lugar para respirar, moverse y reconectar.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Explora</h4>
+                <ul>
+                    <li><a href="index.html#inicio">Inicio</a></li>
+                    <li><a href="index.html#clases">Clases</a></li>
+                    <li><a href="index.html#horarios">Horarios</a></li>
+                    <li><a href="index.html#equipo">Equipo</a></li>
+                    <li><a href="index.html#ubicacion">Ubicación</a></li>
+                    <li><a href="index.html#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-contacto">
+                <h4>Contacto</h4>
+                <p>📍 Carrer de l'Harmonia 17<br>08012 Barcelona</p>
+                <p>📞 <a href="tel:+34931222333">+34 931 222 333</a></p>
+                <p>✉️ <a href="mailto:hola@inhalaespai.com">hola@inhalaespai.com</a></p>
+            </div>
+            <div class="footer-redes">
+                <h4>Síguenos</h4>
+                <div class="iconos-redes">
+                    <a href="#"><img src="icons/instagram.svg" alt="Instagram"></a>
+                    <a href="#"><img src="icons/facebook.svg" alt="Facebook"></a>
+                    <a href="#"><img src="icons/youtube.svg" alt="YouTube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copy">
+            <p>© 2025 Inhala Espai · Diseño consciente & código sereno 🌿</p>
+        </div>
+    </footer>
+
+    <script src="reservas.js"></script>
+</body>
+>>>>>>> 396ba84db9200b0f7f2e737cdfc972c800e1f0a8
 </html>
