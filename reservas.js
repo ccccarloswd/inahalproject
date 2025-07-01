@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const profesor = claseSeleccionada.dataset.profesor;
 
         try {
-        const respuesta = await fetch('http://localhost:3000/api/reservar', {
+        const respuesta = await fetch('https://inahalproject-1.onrender.com', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ nombre, email, telefono, clase, profesor, fecha}) // reemplazamos esto más abajo
