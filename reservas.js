@@ -114,8 +114,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         const dia = horarioSeleccionado.querySelector('.horario-dia').textContent;
         const hora = horarioSeleccionado.querySelector('.horario-hora').textContent;
-        const fecha = dia;
-        const horario = hora;
+        const fecha = `${dia} ${hora}`;
 
         if (!nombre || !email || !telefono || !fecha || !terminos) {
             alert('Por favor completa todos los campos obligatorios');
@@ -130,7 +129,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const respuesta = await fetch('https://inahalproject.onrender.com/api/reservar', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ nombre, email, telefono, clase, profesor, fecha, horario}) // reemplazamos esto más abajo
+            body: JSON.stringify({ nombre, email, telefono, clase, profesor, fecha}) // reemplazamos esto más abajo
         });
 
         const data = await respuesta.json();
